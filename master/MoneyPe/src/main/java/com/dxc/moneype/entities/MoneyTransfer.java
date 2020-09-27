@@ -1,6 +1,17 @@
 package com.dxc.moneype.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+
 public class MoneyTransfer {
+
+	
+	@Id
 	private double accountNo;
 	private String BankIFSC;
 	private String accountHolder;

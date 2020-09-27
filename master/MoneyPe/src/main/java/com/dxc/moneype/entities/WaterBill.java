@@ -1,6 +1,15 @@
 package com.dxc.moneype.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
 public class WaterBill {
+	
+	@Id
 	private long canNumber;
 	private int amount;
 
